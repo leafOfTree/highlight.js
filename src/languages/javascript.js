@@ -126,7 +126,7 @@ function(hljs) {
             contains: [
               {begin: /<\w+\s*\/>/, skip: true},
               {
-                begin: /<\w+/, end: /(\/\w+|\w+\/)>/, skip: true,
+                begin: /<\w+/, end: /(\/\w+|\w+\S*\s*\/)>/, skip: true,
                 contains: [
                   {begin: /<\w+\s*\/>/, skip: true},
                   'self'
