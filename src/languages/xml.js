@@ -11,6 +11,12 @@ function(hljs) {
     relevance: 0,
     contains: [
       {
+        className: 'jsx-attr',
+        begin: /={/,
+        end: /}/,
+        subLanguage: 'xml',
+      },
+      {
         className: 'attr',
         begin: XML_IDENT_RE,
         relevance: 0
